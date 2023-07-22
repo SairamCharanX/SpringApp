@@ -10,7 +10,7 @@ import java.util.List;
 
 /*Methods for requests like GET and POST*/
 @RestController
-@RequestMapping("/")
+@RequestMapping("/api")
 public class UserController {
     @Autowired
     private UserRepository userRepository;
