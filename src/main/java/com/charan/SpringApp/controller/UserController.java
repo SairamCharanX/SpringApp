@@ -20,6 +20,11 @@ public class UserController {
         return userRepository.findAll();
     }
 
+    @GetMapping("/about")
+    public String about(){
+        return "API endpoints: /findAll, /insert";
+    }
+
     @PostMapping("/insert")
     public User insertUser(@RequestBody User user){
         return userRepository.save(user);
